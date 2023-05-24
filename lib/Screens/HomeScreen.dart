@@ -23,7 +23,9 @@ class _HomeScreenState extends State<HomeScreen> {
    }
   @override
   void initState() {
-    setSavedData();
+    Future.delayed(Duration(seconds: 5),
+    () => setSavedData());
+
     super.initState();
   }
   var Ucontroller=TextEditingController();
